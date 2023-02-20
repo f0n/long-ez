@@ -5,33 +5,38 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="js/timer.js"></script>
+<script src="js/navbar.js"></script>
 </head>
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button"><b>Long-EZ</b> Build</a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#projects" class="w3-bar-item w3-button">Build Log</a>
-      <a href="#about" class="w3-bar-item w3-button">Project Status</a>
-      <a href="#contact" class="w3-bar-item w3-button">Resources</a>
+      <a href="#home" class="w3-bar-item w3-button"><b>Long-EZ</b> Build</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#projects" class="w3-bar-item w3-button">Build Log</a>
+        <a href="#about" class="w3-bar-item w3-button">Project Status</a>
+        <a href="#contact" class="w3-bar-item w3-button">Resources</a>
+      </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">BUILD LOG</a>
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECT STATUS</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">RESOURCES</a>
+      <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
     </div>
   </div>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">BUILD LOG</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
-  </div>
-</div>
+
 
 
 
@@ -39,7 +44,7 @@
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
   <img class="w3-image" src="https://s28490.pcdn.co/wp-content/uploads/2021/02/JUL_5933_High.jpg.optimal.jpg" alt="Architecture" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-large w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Long-EZ</b> Build</span> <span class="w3-hide-small w3-text-light-grey"></span></h1>
+    <h1 class="w3-xlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Long-EZ</b> Build</span> <span class="w3-hide-small w3-text-light-grey"></span></h1>
   </div>
 </header>
 
@@ -48,7 +53,7 @@
 
   <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Build Log</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">BUILD LOG</h3>
   </div>
 
   <div class="w3-row-padding">
@@ -108,7 +113,7 @@
 
   <!-- About Section -->
   <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Project Status</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">PROJECT STATUS</h3>
   </div>
 
   <div class="w3-row-padding w3-grayscale">
@@ -137,7 +142,7 @@
 
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Resources</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">RESOURCES</h3>
     <ul>
         <li><h3>EAA</h3></li>
         <li>RAFE</li>
